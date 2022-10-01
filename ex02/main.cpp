@@ -6,17 +6,23 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:25:45 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/10/01 11:05:53 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/10/01 11:50:07 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Brain.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
 
 int main(void) {
-	std::cout << std::endl << "--- PDF: ---" << std::endl
+	// Instantiating an animal doesn't work:
+	//AAnimal *animal1 = new AAnimal();
+	//AAnimal animal2 = AAnimal();
+
+	// Rest ist still working fine:
+	
+	std::cout << DEFAULT << std::endl << "--- PDF: ---" << std::endl
             << std::endl;
   Dog *dog = new Dog();
   Cat *cat = new Cat();
@@ -28,7 +34,7 @@ int main(void) {
             << GREEN << "--- Array of animals ---" << std::endl
             << std::endl;
 
-  Animal *array_animals[10];
+  AAnimal *array_animals[10];
   for (int i = 0; i < 10; i++) {
     if (i % 2)
       array_animals[i] = new Dog();
