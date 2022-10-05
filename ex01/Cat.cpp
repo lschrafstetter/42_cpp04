@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 10:56:16 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/10/01 11:00:13 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/10/01 15:04:26 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ Cat &Cat::operator=(Cat other) {
 void Cat::swap(Cat &first, Cat &second) {
 	std::swap(first.type_, second.type_);
 	std::swap(first.brain_, second.brain_);
-
 }
 
 // Functions
